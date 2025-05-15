@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash | DevOps Portfolio</title>
+  <style>
+    :root {
+      --bg1: #ff6ec4;
+      --bg2: #7873f5;
+      --bg3: #4ade80;
+      --bg4: #06b6d4;
+      --bg5: #a855f7;
+      --glass: rgba(255, 255, 255, 0.08);
+      --hover-glow: rgba(255, 255, 255, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4), var(--bg5));
+      background-size: 500% 500%;
+      animation: gradientMove 20s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      animation: fadeInDown 2s ease-out;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #ffffffcc;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      transition: transform 0.3s ease;
+    }
+
+    p:hover {
+      transform: scale(1.02);
+    }
+
+    nav {
+      text-align: center;
+      margin: 30px 0 60px;
+    }
+
+    nav a {
+      margin: 0 25px;
+      padding: 10px 15px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.4s ease;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    nav a:hover {
+      background: var(--hover-glow);
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 70px 30px;
+      text-align: center;
+      background: var(--glass);
+      margin: 30px;
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transform: translateY(60px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section:hover {
+      box-shadow: 0 14px 50px rgba(255, 255, 255, 0.3);
+      transform: scale(1.01);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.08);
+      transition: background 0.4s ease;
+    }
+
+    footer:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.5em; }
+      h2 { font-size: 1.8em; }
+      nav a { margin: 10px 10px; display: inline-block; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm Akash</h1>
+    <p>A creative and passionate DevOps Engineer with experience in cloud platforms, automation, and scalable systems.</p>
+  </header>
+
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>
+      🔧 Docker, Kubernetes, Jenkins, Git<br>
+      ☁️ AWS, Azure, Terraform, Ansible<br>
+      📈 Prometheus, Grafana, ELK Stack<br>
+      💻 Linux, Shell Scripting, CI/CD pipelines<br>
+      🔒 Wazuh, Monitoring, Security Automation
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>
+      💼 DevOps Engineer at PayTabs Global<br><br>
+      • Deployed and managed cloud infrastructure using Terraform & Ansible<br>
+      • Automated monitoring with Prometheus & Grafana<br>
+      • Built CI/CD pipelines with Jenkins and GitHub Actions<br>
+      • Developed Wazuh-based vulnerability detection systems
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>
+      🚀 Auto-scaling Microservices on Docker Swarm<br>
+      📊 Real-time Infra Monitoring with Prometheus-Grafana<br>
+      🔐 Secure Central Logging with ELK & Wazuh<br>
+      🌍 Cloud Cost Optimization via Automation Scripts
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 akash@example.com<br>
+      🌐 linkedin.com/in/akash-devops<br>
+      📍 Chennai, India
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Akash. Crafted with ❤️ in pure HTML + CSS. No JS frameworks. Just skill.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const scrollReveal = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const secTop = sec.getBoundingClientRect().top;
+        if (secTop < triggerBottom) {
+          sec.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', scrollReveal);
+    window.addEventListener('load', scrollReveal);
+  </script>
+
+</body>
+</html>
+
